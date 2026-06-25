@@ -12,7 +12,6 @@ A collection of mini‑projects built using Python and HTML, showcasing logical 
 
 🏦 Bank ATM Simulator	Simulates basic banking operations like deposits, withdrawals, and transaction history.	Python
 
-🌐 WELCOME TO MAHI’S WORLD	A personal HTML portfolio introducing Mahi Tyagi, showcasing hobbies and mini‑projects.	HTML, CSS
 
 
 ⚙️ Features
