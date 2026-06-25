@@ -1,18 +1,45 @@
-# Bank ATM Simulator
-it is a complete Python program to manage a basic bank account with an initial balance and a transaction history. It allows deposits, withdrawals, and viewing transaction details.
+🌟 PROJECT‑CC
 
-Features
+🧩 Overview
 
-💰 Display Account Balance
-➕ Deposit Money
-➖ Withdraw Money
-📄 View Transaction Statement
-❌ Input Validation
-🔁 Menu Driven Program
-Technologies Used
+A collection of mini‑projects built using Python and HTML, showcasing logical thinking, creativity, and structured programming. Each project demonstrates a different concept — from managing student records to simulating banking operations and creating a personal portfolio site.
 
-Display Balance
-Deposit Money
-Withdraw Money
-Statement
-Exit Learning Objectives This project helps beginners understand: Functions in Python Loops and Conditions Lists User Input Handling Exception Handling Basic Project Structure Author Mahi Tyagi First-Year B.Tech CSE Student at CGC Jhanjeri License This project is open-source and free to use.
+📂 Projects Included
+
+🔖 Project	📝 Description	🧠 Technologies
+
+🎓 Student Management System	Manages student records — add, update, and view details efficiently.	Python
+
+🏦 Bank ATM Simulator	Simulates basic banking operations like deposits, withdrawals, and transaction history.	Python
+
+🌐 WELCOME TO MAHI’S WORLD	A personal HTML portfolio introducing Mahi Tyagi, showcasing hobbies and mini‑projects.	HTML, CSS
+
+
+⚙️ Features
+
+Menu‑driven programs for easy navigation
+
+Input validation and error handling
+
+Clean, readable code structure
+
+Beginner‑friendly logic and modular design
+
+🚀 How to Run
+
+bash
+
+git clone https://github.com/tymahi07/PROJECT-CC.git
+
+Open the desired project folder.
+
+Run the Python file or open the HTML page in your browser.
+
+💡 Purpose
+
+To practice and demonstrate core programming skills — logic building, user interaction, and structured code organization.
+
+🧠 Author
+Mahi Tyagi
+
+Curious coder | Logical thinker | Formatting enthusiast
