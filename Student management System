@@ -102,12 +102,4 @@ def main():
 # Run the program
 main()
 
-# s1=Student_management_System()
-# s1.add_details()
-# # print(s1.student)
-# s1.view_details()
-# s1.search_details()
-# s1.search_details()
-#s1.delete_details()
 
-# s1.displa1y_Topper()
