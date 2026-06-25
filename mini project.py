@@ -1,0 +1,113 @@
+class Student:
+    def __init__(self,id,name,marks,age):
+        self.id=id
+        self.name=name
+        self.age=age
+        self.marks=marks
+
+    def details(self):
+        print(f"Student name: {self.name}\nstudent id: {self.id}\nstudent age: {self.age}\nmarks: {self.marks}")
+
+
+class Student_management_System:
+    def __init__(self):
+        self.students=[]
+
+    def add_details(self):
+        id=int(input("Enter the Student Id :"))
+        name=str(input("Enter the Student name: "))
+        age=int(input("Enter the student's age: "))
+        marks=float(input('Enter the marks: '))
+
+        student=Student(id,name,marks,age)
+
+        self.students.append(student)
+        print('Student details added successfully!✅')
+
+    def view_details(self):
+        if len(self.students)==0:
+            print('Student not found!❌')
+        else:
+            for i in self.students:
+                i.details()
+    def search_details(self):
+        ID=int(input("Enter id: "))
+        for i in self.students:
+            if ID == i.id:
+                i.details()
+                return 
+        print('Student not found!❌')
+
+    def delete_details(self):
+        Student_id=int(input("Enter id: "))
+        for i in self.students:
+            if Student_id==i.id:
+                self.students.remove(i)
+                print("Student details deleted!✅")
+                return 
+            print("Student not found!❌")
+
+    def update_marks(self):
+        ID = int(input("Enter Student ID to update marks: "))
+        for student in self.students:
+            if student.id == ID:
+                new_marks = float(input("Enter new marks: "))
+                student.marks = new_marks
+                print("✅ Marks updated successfully!")
+                return
+        print("❌ Student not found!")
+
+    def display_topper(self):
+        if not self.students:
+            print("❌ No students available!")
+            return
+        topper = max(self.students, key=lambda s: s.marks)
+        print("\n🏆 Topper Student:")
+        topper.details()
+            
+
+# ------------------ MAIN MENU ------------------
+def main():
+    sms = Student_management_System()
+    while True:
+        print("\n--- Student Management System ---")
+        print("1. Add Student")
+        print("2. View All Students")
+        print("3. Search Student by ID")
+        print("4. Update Student Marks")
+        print("5. Delete Student by ID")
+        print("6. Display Topper")
+        print("7. Exit")
+
+        choice = input("Enter your choice: ")
+        if choice == "1":
+            sms.add_details()
+        elif choice == "2":
+            sms.view_details()
+        elif choice == "3":
+            sms.search_details()
+        elif choice == "4":
+            sms.update_marks()
+        elif choice == "5":
+            sms.delete_details()
+        elif choice == "6":
+            sms.display_topper()
+        elif choice == "7":
+            print("👋 Exiting the application...")
+            break
+        else:
+            print("❌ Invalid choice! Please try again.")
+
+
+# Run the program
+main()
+
+# s1=Student_management_System()
+# s1.add_details()
+# # print(s1.student)
+# s1.view_details()
+# s1.search_details()
+# s1.search_details()
+#s1.delete_details()
+
+# s1.displa1y_Topper()
